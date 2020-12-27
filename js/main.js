@@ -183,7 +183,7 @@ if (time < 5) {
 **/
 function select() {
 	$('#folder').css('display') == 'block' ? ($('#folder').css('display', 'none'), $('#nav').css('display', 'block'),
-		document.getElementById("Select").innerHTML = "<hr>搜索引擎 <img src='img/search-change.svg?v=2ae7ab8'>") : ($('#nav').css(
+		document.getElementById("Select").innerHTML = "<hr>搜索引擎") : ($('#nav').css(
 			'display', 'none'), $('#folder').css('display', 'block'), document.getElementById("Select").innerHTML =
 		"<hr>书签");
 }
