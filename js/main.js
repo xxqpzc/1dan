@@ -49,10 +49,6 @@ function rgb2hex(rgb) {
 $(function() {
 	var bookmark = {
 		data: [{
-			name: 'Blog',
-			link: 'https://blog.ninglans.top/',
-			icon: 'https://cdn.jsdelivr.net/gh/konghuaiqing/search4.0-cdn@latest/img/log.png',
-		}, {
 			name: '今日热榜',
 			link: 'https://tophub.today/',
 			icon: 'https://cdn.jsdelivr.net/gh/konghuaiqing/search4.0-cdn@latest/img/headline.png',
@@ -60,30 +56,6 @@ $(function() {
 			name: '知乎',
 			link: 'https://www.zhihu.com/',
 			icon: 'https://cdn.jsdelivr.net/gh/konghuaiqing/search4.0-cdn@latest/img/zhihulogo.png',
-		}, {
-			name: 'XDA',
-			link: 'https://www.xda-developers.com/',
-			icon: 'https://cdn.jsdelivr.net/gh/konghuaiqing/search4.0-cdn@latest/img/xda.png',
-		}, {
-			name: '小米商城',
-			link: 'https://www.mi.com/',
-			icon: 'https://cdn.jsdelivr.net/gh/konghuaiqing/search4.0-cdn@latest/img/mi.png',
-		}, {
-			name: 'Unsplash',
-			link: 'https://unsplash.com/',
-			icon: 'https://cdn.jsdelivr.net/gh/konghuaiqing/search4.0-cdn@latest/img/unsplash.png',
-		}, {
-			name: '少数派',
-			link: 'https://sspai.com/',
-			icon: 'https://cdn.jsdelivr.net/gh/konghuaiqing/search4.0-cdn@latest/img/sspai.png',
-		}, {
-			name: '疫情跟踪',
-			link: 'https://ncov.dxy.cn/ncovh5/view/pneumonia',
-			icon: 'https://cdn.jsdelivr.net/gh/konghuaiqing/search4.0-cdn@latest/img/ding.png',
-		}, {
-			name: '疫情辟谣',
-			link: 'https://vp.fact.qq.com/home',
-			icon: 'https://cdn.jsdelivr.net/gh/konghuaiqing/search4.0-cdn@latest/img/true.png',
 		}]
 	}
 	for (var i = 0; i < bookmark.data.length; i++) {
@@ -102,139 +74,13 @@ $(function() {
 			searchname: 'wd',
 			color: '#3245df',
 			placeholder: '百度一下...'
-		}, {
-			name: 'google',
-			icon: 'https://cdn.jsdelivr.net/gh/konghuaiqing/search4.0-cdn@latest/img/google-xs.png',
-			searchlink: 'https://www.google.com/search',
-			searchname: 'q',
-			color: '#4285f4',
-			placeholder: '咕噜咕噜...'
-		}, {
-			name: 'bing',
-			icon: 'https://cdn.jsdelivr.net/gh/konghuaiqing/search4.0-cdn@latest/img/bing-xs.png',
-			searchlink: 'https://cn.bing.com/search',
-			searchname: 'q',
-			color: '#00868B',
-			placeholder: 'Bing搜索...'
-		}, {
-			name: 'yahoo',
-			icon: 'https://cdn.jsdelivr.net/gh/konghuaiqing/search4.0-cdn@latest/img/yahoo-xs.png',
-			searchlink: 'https://search.yahoo.com/search',
-			searchname: 'p',
-			color: '#5f01d1',
-			placeholder: 'Yahoo~'
-		}, {
-			name: 'magi',
-			icon: 'https://cdn.jsdelivr.net/gh/konghuaiqing/search4.0-cdn@latest/img/magi-xs.png',
-			searchlink: 'https://magi.com/search',
-			searchname: 'q',
-			color: 'black',
-			placeholder: 'Mag[i]...'
-		}, {
-			name: 'miji',
-			icon: 'https://cdn.jsdelivr.net/gh/konghuaiqing/search4.0-cdn@latest/img/miji-xs.png',
-			searchlink: 'https://mijisou.com/',
-			searchname: 'q',
-			color: '#575757',
-			placeholder: '不追踪你的搜索引擎...'
-		}, {
-			name: 'sougou',
-			icon: 'https://cdn.jsdelivr.net/gh/konghuaiqing/search4.0-cdn@latest/img/sougou-xs.png',
-			searchlink: 'https://www.sogou.com/web',
-			searchname: 'query',
-			color: '#f94c18',
-			placeholder: '搜狗搜索...'
-		}, {
-			name: 'duckduckgo',
-			icon: 'https://cdn.jsdelivr.net/gh/konghuaiqing/search4.0-cdn@latest/img/duckduckgo-xs.png',
-			searchlink: 'https://duckduckgo.com',
-			searchname: 'q',
-			color: '#de5833',
-			placeholder: '嘎嘎嘎...'
-		}, {
+		},{
 			name: 'doge',
 			icon: 'https://cdn.jsdelivr.net/gh/konghuaiqing/search4.0-cdn@latest/img/doge-xs.png',
 			searchlink: 'https://www.dogedoge.com/results',
 			searchname: 'q',
 			color: '#ffca74',
 			placeholder: '手动狗头.jpg'
-		}, {
-			name: 'wechat',
-			icon: 'https://cdn.jsdelivr.net/gh/konghuaiqing/search4.0-cdn@latest/img/wechat-xs.png',
-			searchlink: 'https://weixin.sogou.com/weixin',
-			searchname: 'query',
-			color: '#2ca43a',
-			placeholder: '搜微信文章...'
-		}, {
-			name: 'seeres',
-			icon: 'https://cdn.jsdelivr.net/gh/konghuaiqing/search4.0-cdn@latest/img/seeres-xs.png',
-			searchlink: 'https://seeres.com/search',
-			searchname: 'q',
-			color: '#414baa',
-			placeholder: 'private search...'
-		}, {
-			name: 'quark',
-			icon: 'https://cdn.jsdelivr.net/gh/konghuaiqing/search4.0-cdn@latest/img/quark-xs.png',
-			searchlink: 'https://quark.sm.cn/s',
-			searchname: 'q',
-			color: '#6182f6',
-			placeholder: '夸克搜索...'
-		}, {
-			name: 'taobao',
-			icon: 'https://cdn.jsdelivr.net/gh/konghuaiqing/search4.0-cdn@latest/img/taobao-xs.png',
-			searchlink: 'https://s.taobao.com/search',
-			searchname: 'q',
-			color: '#FF5B00',
-			placeholder: '淘，我喜欢...'
-		}, {
-			name: 'jingdong',
-			icon: 'https://cdn.jsdelivr.net/gh/konghuaiqing/search4.0-cdn@latest/img/jingdong-xs.png',
-			searchlink: 'https://search.jd.com/Search',
-			searchname: 'keyword',
-			color: '#F30213',
-			placeholder: '多，快，好，省...'
-		}, {
-			name: 'bilibili',
-			icon: 'https://cdn.jsdelivr.net/gh/konghuaiqing/search4.0-cdn@latest/img/bilibili-xs.png',
-			searchlink: 'https://search.bilibili.com/all',
-			searchname: 'keyword',
-			color: '#e47494',
-			placeholder: 'b站是一个学习网站...'
-		}, {
-			name: 'github',
-			icon: 'https://cdn.jsdelivr.net/gh/konghuaiqing/search4.0-cdn@latest/img/github-xs.png',
-			searchlink: 'https://github.com/search',
-			searchname: 'q',
-			color: '#24292e',
-			placeholder: '全球最大的开源社区...'
-		}, {
-			name: 'toutiao',
-			icon: 'https://cdn.jsdelivr.net/gh/konghuaiqing/search4.0-cdn@latest/img/toutiao-xs.png',
-			searchlink: 'https://m.toutiao.com/search',
-			searchname: 'keyword',
-			color: '#ed2f28',
-			placeholder: '搜今日头条...'
-		}, {
-			name: 'weibo',
-			icon: 'https://cdn.jsdelivr.net/gh/konghuaiqing/search4.0-cdn@latest/img/weibo-xs.png',
-			searchlink: 'https://s.weibo.com/weibo',
-			searchname: 'q',
-			color: '#e6162d',
-			placeholder: '搜微博...'
-		}, {
-			name: 'zhihu',
-			icon: 'https://cdn.jsdelivr.net/gh/konghuaiqing/search4.0-cdn@latest/img/zhihu-xs.png',
-			searchlink: 'https://www.zhihu.com/search',
-			searchname: 'q',
-			color: '#1087eb',
-			placeholder: '我们都是有问题的人...'
-		}, {
-			name: 'kuaidi',
-			icon: 'https://cdn.jsdelivr.net/gh/konghuaiqing/search4.0-cdn@latest/img/kuaidi-xs.png',
-			searchlink: 'https://m.kuaidi100.com/result.jsp',
-			searchname: 'nu',
-			color: '#317EE7',
-			placeholder: '搜快递...'
 		}]
 	}
 	for (var i = 0; i < search.data.length; i++) {
