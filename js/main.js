@@ -99,7 +99,7 @@ $(function() {
 				$('#nav').css('display', 'none');
 				$('#folder').css('display', 'block');
 				document.getElementById("Select").innerHTML =
-					"<hr>书签 <img src='https://cdn.jsdelivr.net/gh/konghuaiqing/search4.0-cdn@4.0/img/search-change.svg?v=2ae7ab8'>";
+					"<hr>书签";
 				$("#inputText").attr("placeholder", search.data[i].placeholder);
 				$("#form").attr("action", search.data[i].searchlink);
 				$("#inputText").attr("name", search.data[i].searchname);
@@ -185,7 +185,7 @@ function select() {
 	$('#folder').css('display') == 'block' ? ($('#folder').css('display', 'none'), $('#nav').css('display', 'block'),
 		document.getElementById("Select").innerHTML = "<hr>搜索引擎 <img src='img/search-change.svg?v=2ae7ab8'>") : ($('#nav').css(
 			'display', 'none'), $('#folder').css('display', 'block'), document.getElementById("Select").innerHTML =
-		"<hr>书签 <img src='img/search-change.svg?v=2ae7ab8'>");
+		"<hr>书签");
 }
 /**
 (function(a, h, g, f, e, d, c, b) {
