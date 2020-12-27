@@ -145,6 +145,7 @@ $(function() {
 		localStorage.closealert = [version];
 	})
 })
+
 var width = $(document).width();
 $('#bg').click(function() {
 	width < 768 ? ($('#main').css('background-image') == 'none' ? ($('#main').css('background-image',
@@ -164,6 +165,7 @@ function check() {
 		return false;
 	}
 }
+/**
 var d = new Date();
 var time = d.getHours();
 if (time < 24) {
@@ -178,13 +180,14 @@ if (time < 12) {
 if (time < 5) {
 	document.getElementById("title").innerHTML = "Search | Stay up late again";
 }
-
+**/
 function select() {
 	$('#folder').css('display') == 'block' ? ($('#folder').css('display', 'none'), $('#nav').css('display', 'block'),
 		document.getElementById("Select").innerHTML = "<hr>搜索引擎 <img src='img/search-change.svg?v=2ae7ab8'>") : ($('#nav').css(
 			'display', 'none'), $('#folder').css('display', 'block'), document.getElementById("Select").innerHTML =
 		"<hr>书签 <img src='img/search-change.svg?v=2ae7ab8'>");
 }
+/**
 (function(a, h, g, f, e, d, c, b) {
 	b = function() {
 		d = h.createElement(g);
@@ -217,6 +220,7 @@ window.SeniverseWeatherWidget('show', {
 	hover: "enabled",
 	container: "tp-weather-widget"
 })
+**/
 class searchHint {
 	constructor() {
 		this.search = inputText;
