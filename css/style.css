@@ -1,0 +1,51 @@
+* {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+body,
+.item::before {
+	background: url('http://h2.ioliu.cn/bing/ShanwangpingKarst_EN-AU5360258756_1920x1080.jpg') no-repeat center fixed;
+	background-size: cover;
+}
+body {
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.item {
+	position: relative;
+	width: 60%;
+	height: auto;
+	padding: 30px;
+	border-radius: 10px;
+	box-shadow: 0 0 5px 1px rgba(155, 153, 153, 0.52);
+	color: #fff;
+	font-size: 15px;
+	font-weight: lighter;
+	line-height: 35px;
+	overflow: hidden;
+}
+.item::before {
+	content: '';
+	display: block;
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: -20px;
+	filter: blur(10px);
+}
+h2 {
+	text-align:center;
+	color:rgb(255, 255, 255);
+}
+p {
+	font-size:18px;
+	color:#FFFFFF;
+	text-decoration:underline;
+}
